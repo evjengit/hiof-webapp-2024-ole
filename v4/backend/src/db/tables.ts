@@ -5,7 +5,7 @@ export const createTables = async (db: DB) => {
   CREATE TABLE IF NOT EXISTS users (
     id TEXT PRIMARY KEY,
     email TEXT UNIQUE NOT NULL,
-    name TEXT NOT NULL
+    name TEXT NOT NULL,
   );
 
   CREATE TABLE IF NOT EXISTS habits (
